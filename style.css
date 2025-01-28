@@ -14,10 +14,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 28px;
 
     max-width: 80%;
     margin: 48px auto;
-    height: 80vh;
 
     padding: 1rem;
 
@@ -45,6 +45,15 @@ body {
     border-radius: 900px;
 
     padding: 12px 28px;
+}
+
+button {
+    padding: 12px 28px;
+    border-radius: 900px;
+}
+
+header {
+    align-items: center;
 }
 
 @media screen and (min-width: 481px) {
