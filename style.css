@@ -52,6 +52,12 @@ button {
     border-radius: 900px;
 }
 
+button:hover {
+    cursor: pointer;
+    background-color: aquamarine;
+    color: black;
+}
+
 header {
     align-items: center;
 }

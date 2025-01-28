@@ -23,4 +23,21 @@ for (let i = 0; i < 10; i++) {
     })  
 }
 
+generaMail.addEventListener('click', () => {
+    let cols = document.querySelectorAll(".col p");
+
+    for (let x = 0; x < cols.length; x++) {
+        fetch('https://flynn.boolean.careers/exercises/api/random/mail')
+        .then(response => response.json())
+        .then(data => {
+            let newEmail = data.response;
+            cols[x].innerHTML = newEmail;
+        })
+        .catch(error => {
+        
+        })  
+    }
+    
+})
+
 // end code
